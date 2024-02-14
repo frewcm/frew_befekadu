@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Maison-Neue";
+  src: url("./fonts/FontsFree-Net-Maison-Neue-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Interphases-regular";
+  src: url("./fonts//TT\ Interphases\ Pro\ Trial\ Regular.ttf");
+}
+@font-face {
+  font-family: "Interphases-light";
+  src: url("./fonts/TT\ Interphases\ Pro\ Trial\ Light.ttf");
+}
+
+.hero-blob {
+  border-radius: 57% 0% 0% 26% / 75% 25% 25% 25%;
+}
+
+.hero-blob2 {
+  border-radius: 63% 37% 70% 30% / 54% 50% 50% 46%;
+}
+.about-blob {
+  border-radius: 20% 80% 80% 20% / 50% 50% 50% 50%;
+}
+.contact-blob {
+  border-radius: 90% 10% 100% 0% / 0% 10% 90% 100%;
+}
