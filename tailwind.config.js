@@ -2,9 +2,6 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    // screens: {
-    //   // mdlg: "820px",
-    // },
     colors: {
       primary: "#316195",
       secondary: "#f99c24",

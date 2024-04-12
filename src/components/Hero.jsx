@@ -49,9 +49,24 @@ const descriptionVariants = {
   },
 };
 
-const buttonVariants = {
+const reactVariants = {
   hidden: {
-    x: -600,
+    x: 550,
+    opacity: 0,
+  },
+  visible: {
+    x: 0,
+    opacity: 1,
+    transition: {
+      delay: 0.3,
+      duration: 0.4,
+    },
+  },
+};
+
+const nodeVariants = {
+  hidden: {
+    x: 600,
     opacity: 0,
   },
   visible: {
@@ -62,12 +77,17 @@ const buttonVariants = {
       duration: 0.6,
     },
   },
-  hover: {
-    scale: 1.1,
+};
+
+const codeVariants = {
+  hidden: {
+    opacity: 0,
+  },
+  visible: {
+    opacity: 1,
     transition: {
+      delay: 0.3,
       duration: 0.3,
-      repeatType: "mirror",
-      repeat: 5,
     },
   },
 };
@@ -116,17 +136,46 @@ const Hero = () => {
             duration={500}
           >
             <motion.button
-              variants={buttonVariants}
-              initial="hidden"
-              animate="visible"
-              whileHover="hover"
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.9 }}
+              transition={{ type: "spring", duration: 0.2 }}
               className="font-Maison-Neue text-white bg-primary px-4 py-2"
             >
               See my work
             </motion.button>
           </Link>
         </motion.div>
-        <div className="bg-secondary hidden lg:flex">right</div>
+        <div className="w-full h-full relative hidden lg:flex">
+          <motion.img
+            variants={reactVariants}
+            initial="hidden"
+            animate="visible"
+            className="w-20 absolute opacity-80 top-28 left-0"
+            src="react.png"
+            alt="react image"
+          />
+          <img
+            className="w-[400px] absolute top-10 right-0"
+            src="webdev.png"
+            alt="web image"
+          />
+          <motion.img
+            variants={nodeVariants}
+            initial="hidden"
+            animate="visible"
+            className="w-14 absolute bottom-20 opacity-80 right-0"
+            src="node.png"
+            alt="web image"
+          />
+          <motion.img
+            variants={codeVariants}
+            initial="hidden"
+            animate="visible"
+            className="w-16 absolute bottom-16 opacity-80 left-24"
+            src="code.png"
+            alt="html image"
+          />
+        </div>
       </div>
     </div>
   );

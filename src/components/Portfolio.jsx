@@ -1,6 +1,7 @@
 import { portfolio } from "../data/data";
 import { FaExternalLinkAlt } from "react-icons/fa";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const Portfolio = () => {
   return (
@@ -18,20 +19,19 @@ const Portfolio = () => {
               <div className="h-96 relative" key={project.id}>
                 <div className="absolute top-0 left-0 bg-primary/60 h-full w-full rounded  opacity-0 hover:opacity-100 transition-opacity ease-linear delay-200">
                   <motion.div
-                    whileHover={{ y: 0 }}
-                    initial={{ y: 20 }}
-                    transition={{ delay: 0.3 }}
+                    initial={{ y: 30, opacity: 0 }}
+                    whileHover={{ y: 0, opacity: 1 }}
+                    transition={{ type: "spring", stiffness: 60, delay: 0.3 }}
                     className="w-full h-full flex flex-col items-center justify-center"
                   >
-                    <div
-                      whileHover={{ scale: 2 }}
-                      className="flex flex-col items-center justify-center gap-2"
-                    >
-                      <FaExternalLinkAlt size={25} className="text-white" />
+                    <motion.div className="flex flex-col items-center justify-center gap-2">
+                      <Link to={project.link}>
+                        <FaExternalLinkAlt size={25} className="text-white" />
+                      </Link>
                       <p className="text-white font-Interphases-reqular">
                         {project.title}
                       </p>
-                    </div>
+                    </motion.div>
                   </motion.div>
                 </div>
                 <img

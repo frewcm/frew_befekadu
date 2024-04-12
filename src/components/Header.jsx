@@ -20,10 +20,7 @@ const Header = () => {
         className="z-40 h-[540px] w-full sticky top-[100px] right-0 bg-white"
       >
         <ul className="w-10/12 mx-auto font-Maison-Neue text-lg mt-6">
-          <motion.li
-            whilehover={{ scale: 1.1, originX: 0 }}
-            className="text-primary text-start border-b border-secondary/30 py-4"
-          >
+          <motion.li className="text-primary text-start border-b border-secondary/30 py-4">
             <Link
               className="cursor-pointer"
               activeClass="active"
@@ -37,10 +34,7 @@ const Header = () => {
               About
             </Link>
           </motion.li>
-          <motion.li
-            whileHover={{ scale: 1.1, originX: 0 }}
-            className="text-primary text-start border-b border-secondary/30 py-4"
-          >
+          <motion.li className="text-primary text-start border-b border-secondary/30 py-4">
             <Link
               className="cursor-pointer"
               activeClass="active"
@@ -54,27 +48,7 @@ const Header = () => {
               Portfolio
             </Link>
           </motion.li>
-          <motion.li
-            whileHover={{ scale: 1.1, originX: 0 }}
-            className="text-primary text-start border-b border-secondary/30 py-4"
-          >
-            <Link
-              className="cursor-pointer"
-              activeClass="active"
-              to="portfolio"
-              spy={true}
-              smooth={true}
-              offset={-700}
-              duration={500}
-              onClick={() => setIsOpen(false)}
-            >
-              Portfolio
-            </Link>
-          </motion.li>
-          <motion.li
-            whileHover={{ scale: 1.1, originX: 0 }}
-            className="text-primary text-start border-b border-secondary/30 py-4"
-          >
+          <motion.li className="text-primary text-start border-b border-secondary/30 py-4">
             <Link
               className="cursor-pointer"
               activeClass="active"
@@ -89,7 +63,9 @@ const Header = () => {
             </Link>
           </motion.li>
           <motion.li
-            whileHover={{ scale: 1.1, originX: 0 }}
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+            transition={{ duration: 0.3 }}
             className="text-start py-4"
           >
             <Link
@@ -131,10 +107,9 @@ const Header = () => {
                 top: 200,
                 bottom: 500,
               }}
-              className="flex"
+              className=""
             >
-              <p className="text-primary text-3xl">Lo</p>
-              <p className="text-secondary text-3xl">go.</p>
+              <img src="/hi.png" className="w-10" alt="hi" />
             </motion.div>
           </Link>
           <div className="hidden lg:flex items-center gap-16">
@@ -145,7 +120,7 @@ const Header = () => {
               smooth={true}
               offset={-100}
               duration={500}
-              className="text-primary font-Maison-Neue cursor-pointer hover:border-b-2 border-b-secondary transition ease-linear delay-200"
+              className="text-primary font-Maison-Neue cursor-pointer border-b-2 border-b-white hover:border-b-2 hover:border-b-secondary  transition ease-linear delay-200"
             >
               About
             </Link>
@@ -156,7 +131,7 @@ const Header = () => {
               smooth={true}
               offset={-100}
               duration={500}
-              className="text-primary font-Maison-Neue cursor-pointer hover:border-b-2 border-b-secondary transition ease-linear delay-200"
+              className="text-primary font-Maison-Neue cursor-pointer border-b-2 border-b-white hover:border-b-2 hover:border-b-secondary  transition ease-linear delay-200"
             >
               Portfolio
             </Link>
@@ -167,7 +142,7 @@ const Header = () => {
               smooth={true}
               offset={-100}
               duration={500}
-              className="text-primary font-Maison-Neue cursor-pointer hover:border-b-2 border-b-secondary transition ease-linear delay-200"
+              className="text-primary font-Maison-Neue cursor-pointer border-b-2 border-b-white hover:border-b-2 hover:border-b-secondary transition ease-linear delay-200"
             >
               Services
             </Link>
@@ -183,7 +158,8 @@ const Header = () => {
                 whileHover={{
                   scale: 1.1,
                 }}
-                transition={{ duration: 0.3, repeatType: "mirror", repeat: 5 }}
+                whileTap={{ scale: 0.9 }}
+                transition={{ type: "spring", duration: 0.3 }}
                 className="text-white font-Maison-Neue px-4 py-2 bg-primary rounded cursor-pointer"
               >
                 Connect

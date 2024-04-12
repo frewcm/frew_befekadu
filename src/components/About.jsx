@@ -9,7 +9,7 @@ const About = () => {
               <div className="absolute bg-primary/60 hover:bg-primary/0 transition ease-linear delay-200 top-0 bottom-0 left-0 right-0 rounded-full"></div>
               <img
                 className="bg-primary rounded-full "
-                src="frew-image-noback.png"
+                src="frew-image.png"
                 alt="image of frew"
               />
             </div>
