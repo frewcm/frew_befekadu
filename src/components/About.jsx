@@ -3,12 +3,12 @@ const About = () => {
     <div id="about" className="h-auto my-16 lg:my-0 lg:h-dvh relative">
       <div className="about-blob absolute w-0 lg:w-1/2  top-0 left-0 bottom-0 z-[-1] bg-teritiary"></div>
       <div className="w-10/12 h-full mx-auto grid grid-cols-1 lg:grid-cols-2 gap-2">
-        <div className="flex flex-col items-center justify-center mb-8 lg:mb-0">
+        <div className="flex flex-col items-center justify-center mb-8 mt-20 md:mt-12 lg:mb-0">
           <div className="w-full flex flex-col justify-center items-center lg:items-start relative">
             <div className="my-6 w-96 flex flex-col items-center justify-center rounded-full border-4 border-secondary relative">
               <div className="absolute bg-primary/60 hover:bg-primary/0 transition ease-linear delay-200 top-0 bottom-0 left-0 right-0 rounded-full"></div>
               <img
-                className="bg-primary rounded-full "
+                className="bg-primary rounded-full"
                 src="frew-image.png"
                 alt="image of frew"
               />
@@ -25,7 +25,7 @@ const About = () => {
           <p className="text-secondary font-Interphases-reqular bg-secondary/5 rounded-full text-sm border border-secondaryx` px-2 py-1">
             About me
           </p>
-          <p className="text-4xl font-Maison-Neue text-primary mt-2 mb-4">
+          <p className="text-4xl text-end font-Maison-Neue text-primary mt-2 mb-4">
             I'm a Web Developer.
           </p>
           <p className="w-10/12 text-end mb-4 text-primary font-Interphases-reqular">
