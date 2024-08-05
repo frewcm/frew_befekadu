@@ -4,7 +4,7 @@ const About = () => {
       <div className="about-blob absolute w-0 lg:w-1/2  top-0 left-0 bottom-0 z-[-1] bg-teritiary"></div>
       <div className="w-10/12 h-full mx-auto grid grid-cols-1 lg:grid-cols-2 gap-2">
         <div className="flex flex-col items-center justify-center mb-8 mt-20 md:mt-12 lg:mb-0">
-          <div className="w-full flex flex-col justify-center items-center lg:items-start relative">
+          <div className="w-11/12 mx-auto flex flex-col justify-center items-center lg:items-start relative">
             <div className="my-6 w-96 flex flex-col items-center justify-center rounded-full border-4 border-secondary relative">
               <div className="absolute bg-primary/60 hover:bg-primary/0 transition ease-linear delay-200 top-0 bottom-0 left-0 right-0 rounded-full"></div>
               <img
