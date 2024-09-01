@@ -15,7 +15,7 @@ const nameVariants = {
     opacity: 1,
     transition: {
       delay: 0.2,
-      duration: 0.2,
+      duration: 1,
     },
   },
 };
@@ -30,7 +30,7 @@ const sloganVariants = {
     opacity: 1,
     transition: {
       delay: 0.3,
-      duration: 0.4,
+      duration: 1,
     },
   },
 };
@@ -44,7 +44,7 @@ const descriptionVariants = {
     opacity: 1,
     transition: {
       delay: 0.3,
-      duration: 0.5,
+      duration: 1,
     },
   },
 };
@@ -59,7 +59,7 @@ const reactVariants = {
     opacity: 1,
     transition: {
       delay: 0.3,
-      duration: 0.4,
+      duration: 1,
     },
   },
 };
@@ -74,7 +74,7 @@ const nodeVariants = {
     opacity: 1,
     transition: {
       delay: 0.3,
-      duration: 0.6,
+      duration: 1,
     },
   },
 };
@@ -87,7 +87,7 @@ const codeVariants = {
     opacity: 1,
     transition: {
       delay: 0.3,
-      duration: 0.3,
+      duration: 1,
     },
   },
 };
